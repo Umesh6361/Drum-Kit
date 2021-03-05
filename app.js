@@ -1,5 +1,5 @@
 var t_button = document.querySelectorAll(".drum").length;
-
+// thi is for buttonpress
 for (var i = 0; i < t_button; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var button_html = this.innerHTML;
@@ -7,6 +7,7 @@ for (var i = 0; i < t_button; i++) {
     
   });
 }
+// this is for keypress
   document.addEventListener("keydown", function(event) {
     drum_sound(event.key);
   });
