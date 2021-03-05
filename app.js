@@ -53,5 +53,8 @@ for (var i = 0; i < t_button; i++) {
   function key_animation(currentkey) {
     var active_key=document.querySelector("."+currentkey);
     active_key.classList.add("pressed");
+    setTimeout(function(){
+      active_key.classList.remove("pressed")
+    }, 100);
   }
 
